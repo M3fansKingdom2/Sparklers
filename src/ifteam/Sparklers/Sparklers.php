@@ -12,7 +12,7 @@ use pocketmine\level\Level;
 use pocketmine\level\Position;
 use pocketmine\block\Block;
 use pocketmine\level\particle\DustParticle;
-use pocketmine\level\sound\PopSound;
+use pocketmine\level\sound\GhastSound;
 
 class Sparklers extends PluginBase implements Listener {
 	public $messages, $db;
@@ -40,7 +40,7 @@ class Sparklers extends PluginBase implements Listener {
 				
 				if (count ( $players ) == 0) continue;
 
-				$level->addSound(new PopSound($pillarPos), $players);
+				$level->addSound(new GhastSound($pillarPos), $players);
 				for($h = 1; $h <= 11; $h ++) {
 					$pillarPos->setComponents ( $pillarPos->x, ++ $pillarPos->y, $pillarPos->z );
 					$level->addParticle ( new DustParticle ( $pillarPos, 255, 255, 255, 255 ), $players );
