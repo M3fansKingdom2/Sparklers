@@ -8,8 +8,8 @@ m_version: 1
 eng: true
 kor-default-prefix: "[ SERVER ]"
 eng-Sparklers: "Sparklers"
-eng-Sparklers-set-succeess: "You have installed the Sparklers!"
-eng-Sparklers-unset-succeess: "have deleted a Sparklers!"
+eng-Sparklers-set-succeess: "Kamu Telah Set Sparklers"
+eng-Sparklers-unset-succeess: "Kamu Telah Hapus Sparklers"
 
 #(KO) KOREAN
 kor: true
